@@ -1,0 +1,36 @@
+cloud computing - a business mode (hardware vendor, software vendor, customer)
+cloud - a dynamic resource pool for RENTing
+
+FusionSphere Arch:
+- Physical layer
+- virtualization layer
+- cloudification layer
+- OSS/BSS layer
+
+Huawei FusionCloud -> ManagerOne (SC+OC) + BSS (Self-Service Portal) + Cloud OS (openstack) + FusionCompute (vm pool) + FusionStorage (storage pool) + FusionNetwork/SDN (VPC pool)
+(public version = Huawei CloudStack HCS)
+
+Physical:
+---------
+Rack:
+	x86 - RH series (2288)
+	ARM - Taishan
+Blade:
+	E9000
+	ch1xx - half height
+	ch2xx - full height
+
+Tower:
+	Kunlun series (like P595)
+
+Storage:
+	Oceanstore, Dorado
+	Integrated design type - control part & disk part on same chassis
+	Separated design type - different chassis for control and disks
+
+Network:
+	Cloud Engine (CE) datacenter switch
+
+HA Solution Reccomendation:
+	< 10km -- FC + sync
+	> 10km -- ip + async
